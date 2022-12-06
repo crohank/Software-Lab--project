@@ -1,0 +1,37 @@
+.homepage{
+    background-image: url("https://images.wallpaperscraft.com/image/single/train_man_railroad_122715_1366x768.jpg");
+    height: 100vh;
+}
+
+.nav{
+    background-color: transparent;
+}
+.elements{
+    color: white;
+    font-family: 'cambria';
+    font-size: 20px;
+    margin: auto;
+}
+
+.buttons{
+    margin-top: 340px;
+    background-color: transparent;
+}
+
+#button{
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    margin-left: 20px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    width: 150px;
+}
+
+.form-elements{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: transparent;
+    
+}
