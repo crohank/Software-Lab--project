@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
     <head>
         <link rel="stylesheet" href="RailwayHomePage.css"/>
@@ -33,7 +33,7 @@
                 </div>
             </div>
         </div>
-
+        <form action="login.php" method="POST">
         <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document" style="font-family: cambria;">
                 <div class="modal-content">
@@ -46,13 +46,13 @@
                 <div class="modal-body mx-3">
                     <div class="md-form mb-5">
                     <i class="fas fa-envelope prefix grey-text"></i>
-                    <input type="email" id="defaultForm-email" class="form-control validate">
+                    <input type="email" id="defaultForm-email" class="form-control validate" name="loginm">
                     <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
                     </div>
 
                     <div class="md-form mb-4">
                     <i class="fas fa-lock prefix grey-text"></i>
-                    <input type="password" id="defaultForm-pass" class="form-control validate">
+                    <input type="password" id="defaultForm-pass" class="form-control validate" name="loginp">
                     <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
                     </div>
 
@@ -63,7 +63,8 @@
                 </div>
             </div>
         </div>
-
+        </form>
+        <form action="register.php" method="POST">
         <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content" style="font-family: cambria;">
@@ -76,19 +77,19 @@
                 <div class="modal-body mx-3">
                     <div class="md-form mb-5">
                     <i class="fas fa-user prefix grey-text"></i>
-                    <input type="text" id="orangeForm-name" class="form-control validate">
-                    <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+                    <input type="text" id="orangeForm-name" class="form-control validate" name="regisn">
+                    <label data-error="wrong" data-success="right" for="orangeForm-name" >Your name</label>
                     </div>
                     <div class="md-form mb-5">
                     <i class="fas fa-envelope prefix grey-text"></i>
-                    <input type="email" id="orangeForm-email" class="form-control validate">
-                    <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
+                    <input type="email" id="orangeForm-email" class="form-control validate" name="regism">
+                    <label data-error="wrong" data-success="right" for="orangeForm-email" >Your email</label>
                     </div>
 
                     <div class="md-form mb-4">
                     <i class="fas fa-lock prefix grey-text"></i>
-                    <input type="password" id="orangeForm-pass" class="form-control validate">
-                    <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+                    <input type="password" id="orangeForm-pass" class="form-control validate" name="regisp">
+                    <label data-error="wrong" data-success="right" for="orangeForm-pass" >Your password</label>
                     </div>
 
                 </div>
@@ -98,8 +99,9 @@
                 </div>
             </div>
         </div>
-        
+        </form>
         <!-- Modal -->
+        <form action="equiry.php" method="POST">
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="complaintModalLabel" aria-hidden="true">
             <div class="modal-dialog">
             <div class="modal-content">
@@ -111,71 +113,28 @@
                 </div>
                 <div class="modal-body mx-3">
                     <div class="md-form mb-5">
-                    <input type="text" id="Form-name" class="form-control validate">
+                    <input type="text" id="Form-name" class="form-control validate" name="uname">
                     <label data-error="wrong" data-success="right" for="Form-name" aria-placeholder="name">Your name</label>
                     </div>
                     <div class="md-form mb-5">
-                    <input type="email" id="Form-email" class="form-control validate">
+                    <input type="email" id="Form-email" class="form-control validate" name="mail">
                     <label data-error="wrong" data-success="right" for="Form-email">Your email</label>
                     </div>
 
                     <div class="md-form mb-4">
-                    <input type="text" id="Form-pnr" class="form-control validate">
-                    <label data-error="wrong" data-success="right" for="Form-pnr">Your PNR</label>
-                    </div>
-
-                    <div class="md-form mb-4">
-                    <input type="text" id="Form-complaint" class="form-control validate">
+                    <textarea id="Form-complaint" name="sub" rows="5" cols="50" class="form-control validate">
+                    </textarea>
                     <label data-error="wrong" data-success="right" for="Form-complaint">Subject</label>
                     </div>
 
                 </div>
                 <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </div>
             </div>
         </div>
-
-        <!-- Modal -->
-                <div class="modal fade" id="ticketModal" tabindex="-1" aria-labelledby="ticketModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title" id="ticketModalLabel">Enter Detials</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        </div>
-                        <div class="modal-body mx-3">
-                            <div class="md-form mb-5">
-                            <input type="text" id="Form-source" class="form-control validate">
-                            <label data-error="wrong" data-success="right" for="Form-source" aria-placeholder="name">Source</label>
-                            </div>
-                            <div class="md-form mb-5">
-                            <input type="email" id="Form-destination" class="form-control validate">
-                            <label data-error="wrong" data-success="right" for="Form-destination">Destination</label>
-                            </div>
-        
-                            <div class="md-form mb-4">
-                            <input type="text" id="Form-seats" class="form-control validate">
-                            <label data-error="wrong" data-success="right" for="Form-seats" class="w-40">Number of seats</label>
-                            </div>
-        
-                            <div class="md-form mb-4">
-                            <input type="text" id="Form-type" class="form-control validate">
-                            <label data-error="wrong" data-success="right" for="Form-type">Train type</label>
-                            </div>
-        
-                        </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Submit</button>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
-        
+        </form>
         <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
     </body>
 </html>
